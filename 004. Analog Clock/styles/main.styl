@@ -1,0 +1,52 @@
+
+body
+  display flex
+  justify-content center
+  align-items center
+
+
+#analog-clock
+  border #6b6b6b solid 2px
+  border-radius 50%
+  height 500px
+  width 500px
+  background-color #382f2f
+
+
+.hand
+  position absolute
+  bottom 50%
+  left 50%
+  transform-origin 50% 100%
+
+#hour
+  height 120px
+  width 0
+  border #065fd3 solid 4px
+  border-radius 100px
+  //transform: rotate(90deg);
+
+#minute
+  height 150px
+  width 0
+  border-radius 100px
+  border #8e8e8e solid 3px
+  //transform  rotate(210deg)
+
+#seconds
+  height 230px
+  width 0
+  border-radius 50%
+  border #dad8d8 solid 2px
+
+  //transform rotate(10deg)
+
+
+.clock-center
+  height 15px
+  width 15px
+  background-color #121212
+  border-radius 50%
+  transform  translate(-3px , 5px)
+
+  //transform rotate(90deg)
