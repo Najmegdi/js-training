@@ -1,5 +1,55 @@
-@import "general/fonts"
-@import "general/reset"
-@import "general/variables"
-@import "general/general"
-@import "sections/main"
+body
+	background var(--bgColor)
+
+main
+	padding 1rem
+
+header
+	display flex
+	justify-content center
+	align-items center
+	padding .5rem
+
+section
+	display flex
+	justify-content center
+	align-items center
+
+.table
+	display flex
+	justify-content center
+	align-items center
+	padding 3rem
+	height 450px
+	width 450px
+	border none
+	border-radius 120px
+	background var(--primaryColor)
+
+
+.table div:nth-child(3)
+	border none
+
+
+.column
+	height 380px
+	width 100%
+	border-right var(--buleColor) 5px double
+
+
+.row
+	display flex
+	justify-content center
+	align-items center
+	height 125px
+	width 100%
+	border-bottom var(--buleColor) 5px double
+	background-position: center
+	background-repeat no-repeat
+	background-size: 60px
+
+	&.triangle
+		background-image url('./images/icons/triangle.png')
+
+	&.circle
+		background-image url('./images/icons/circle.png')
