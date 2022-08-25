@@ -1,0 +1,59 @@
+
+body
+	background-color #c2caf3
+	display flex
+	justify-content center
+	align-items center
+
+	main
+		background-color #f4f4f4
+		height 500px
+		width 320px
+		display grid
+		grid-template-rows 1fr 1fr 3fr
+
+
+.calc-screen
+	display flex
+	align-items center
+	background-color #eceaea
+	padding 2rem
+
+button
+	border none
+	border-top .1px solid #d7d5d5
+	border-right .1px solid #d7d5d5
+	font-size 2rem
+
+	&:hover
+		background-color #3f92fa
+		color #f8f7f7
+
+	&[data-action^='Operator']
+		background: #ff4242
+
+	&[data-action^='Digit']
+		background: #03c803
+
+	&[data-action^='Action'] // starts with
+		background: #4a7cfb
+
+	&[data-action='Action Decimal'] // equals to
+		background: #fdb225
+
+#buttons
+	border none
+	display grid
+	grid-template-columns 	repeat(4, auto)
+	grid-template-rows 		repeat(5, auto)
+
+.history
+	display: flex
+	flex-wrap wrap
+
+	span
+		display: block
+		white-space nowrap
+
+		&.operator
+			color: dodgerblue

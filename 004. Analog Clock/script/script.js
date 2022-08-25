@@ -48,9 +48,8 @@ function currentTime() {
 	let s = now.getSeconds()
 	let ms = now.getMilliseconds();
 
-	console.log(`${h}:${m}:${s}`)
 	changeToDeg(h, m, s, ms)
-	// setInterval(hourAngle , 10)
+
 }
 
 for (let i = 0; i < 60; i++) {
